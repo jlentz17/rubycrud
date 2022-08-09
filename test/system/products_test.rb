@@ -52,6 +52,6 @@ class ProductsTest < ApplicationSystemTestCase
       click_on "Destroy", match: :first
     end
 
-    assert_text "Product was successfully destroyed"
+    assert_text "Product was successfully deleted"
   end
 end

@@ -1,6 +1,10 @@
-<p id="notice"><%= notice %></p>
-
-<p>
+<div style="margin-top:55px; padding-top:55px;" class="container-fluid text-sm-center p-5 bg-secondary bg-gradient">
+    <h1 class="display-4">
+      <%= @product.item_name %>
+    </h1>
+    <hr class="mt-4">
+    <p class="lead">
+      <p>
   <strong>Product code:</strong>
   <%= @product.product_code %>
 </p>
@@ -26,7 +30,7 @@
 </p>
 
 <p>
-  <strong>Price cents:</strong>
+  <strong>Price:</strong>
   <%= @product.price_cents %>
 </p>
 
@@ -39,6 +43,11 @@
   <strong>Supplier code:</strong>
   <%= @product.supplier_code %>
 </p>
+    </p>
 
-<%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'Back', products_path %>
+    <br/><br/>
+
+    <%= link_to 'Edit', edit_product_path(@product), class:'btn btn-dark' %>
+
+<%= link_to 'Back', products_path, class:'btn btn-dark' %>
+</div>
